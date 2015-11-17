@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JMSRECOVERY>
+
+<!--  
+INTERFACE - Publish channel name
+destination - External system name
+destjndiname - queue jndi name, in this case, it is outbound queue
+MEAMessageID - unique message id
+-->
+<MSGPROP INTERFACE="CGMXGLTXN" SENDER="MX" destination="CGEXTSYS" interfacetype="CGEXTSYS" destjndiname="jms/maximo/int/queues/sqout" 
+MEAMessageID="1377709892952565307" />
+
+<!-- PublishCGMXGLTXN  - CGMXGLTXN is Publish channel name -->
+<MSGDATA>
+<PublishCGMXGLTXN xmlns="http://www.mro.com/mx/integration" 
+xmlns:ns1="http://www.mro.com/mx/integration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creationDateTime="2015-08-28T13:11:32-04:00"
+transLanguage="EN" baseLanguage="EN" messageID="1377709892952565307" maximoVersion="7 5 20150115-1550 V7506-08" event="1">
+
+<!-- CGGLTXN -- Object Structure name -->
+<CGGLTXNSet>
+<CGGLTXN action = "Add" >
+	<ITEMNUM>M71539721</ITEMNUM>
+	<TRANSDATE>2015-06-10T20:39:25-05:00</TRANSDATE>
+	<TRANSTYPE/>
+	<QUANTITY>1.0</QUANTITY>
+	<ISSUETYPE>TRANSFER</ISSUETYPE>
+	<GLDEBITACCT>31931*******-14050010******</GLDEBITACCT>
+	<GLCREDITACCT>31931*******-14050010******</GLCREDITACCT>
+	<LINECOST>957.00</LINECOST>
+	<INVTRANSID/>
+	<MATUSETRANSID/>
+	<MATRECTRANSID>64426129918</MATRECTRANSID>
+	<SITEID>EFRVSHRD</SITEID>
+</CGGLTXN>
+</CGGLTXNSet>
+</PublishCGMXGLTXN>
+
+</MSGDATA>
+</JMSRECOVERY>
